@@ -531,6 +531,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 472331511}
+  - component: {fileID: 472331512}
   m_Layer: 0
   m_Name: ScoreZone
   m_TagString: Untagged
@@ -553,37 +554,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &675968886
-GameObject:
+--- !u!114 &472331512
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 675968887}
-  m_Layer: 0
-  m_Name: TextScore
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &675968887
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 675968886}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1206.6299, y: -0.00001, z: 950.8384}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 472331510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19156937d41efc143887f88a48895c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScoreManager.Runtime::ScoreManager.Runtime.ScoreManager
 --- !u!1 &768319216
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,6 +700,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1014914028}
   - component: {fileID: 1014914029}
+  - component: {fileID: 1014914030}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -798,6 +781,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1014914030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014914027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19156937d41efc143887f88a48895c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ScoreManager.Runtime::ScoreManager.Runtime.ScoreManager
 --- !u!1 &1192588117
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,6 +804,7 @@ GameObject:
   - component: {fileID: 1192588118}
   - component: {fileID: 1192588120}
   - component: {fileID: 1192588119}
+  - component: {fileID: 1192588121}
   m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
@@ -873,6 +869,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192588117}
   m_CullTransparentMesh: 1
+--- !u!114 &1192588121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192588117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7817ee607c6b4bd4aac91b5466aa9650, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: SliderGame.Runtime::SliderGame.Runtime.SliderGame
+  slider: {fileID: 1014914029}
+  speed: 0.5
 --- !u!1 &1344080106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,4 +1220,3 @@ SceneRoots:
   - {fileID: 1344080109}
   - {fileID: 435790758}
   - {fileID: 472331511}
-  - {fileID: 675968887}
